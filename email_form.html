@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Form</title>
+    <link rel="icon" type="image/png" href="/Users/tendies88/Desktop/Portfolio/assets/css/images/icons8-fsociety-mask-50.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload" id="contact-page">
+    <div id="wrapper">
+        <div id="bg"></div>
+        <div id="overlay"></div>
+        <div id="main">
+            
+            
+            
+            <!-- Header -->
+            <div id="header">
+                <div id="return-home">
+                    <a href="/"><span></span> Return home</a>
+                </div>
+                
+                <section id="contact">
+                    <h1>Let's get in touch</h1>
+                    <form action="/path_to_your_server_script" method="post">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" required />
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required />
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="6" required></textarea>
+                        </div>
+                        <div class="field">
+                            <input type="submit" value="Send Message" />
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <!-- Footer -->
+                <footer id="footer">
+                    
+                </footer>
+
+        </div>
+    </div>
+    <script>
+        window.onload = function() { document.body.classList.remove('is-preload'); }
+        window.ontouchmove = function() { return false; }
+        window.onorientationchange = function() { document.body.scrollTop = 0; }
+    </script>
+</body>
+</html>
+
